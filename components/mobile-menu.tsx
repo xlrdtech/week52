@@ -3,50 +3,50 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Menu } from "lucide-react"
 
 export default function MobileMenu() {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen)
-  }
+  const [open, setOpen] = useState(false)
 
   return (
-    <div className="md:hidden">
-      <Button variant="ghost" size="icon" onClick={toggleMenu} aria-label={isOpen ? "Close menu" : "Open menu"}>
-        {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-      </Button>
-
-      {isOpen && (
-        <div className="fixed inset-0 z-50 bg-white">
-          <div className="flex justify-end p-4">
-            <Button variant="ghost" size="icon" onClick={toggleMenu} aria-label="Close menu">
-              <X className="h-6 w-6" />
-            </Button>
+    <Sheet open={open} onOpenChange={setOpen}>
+      <SheetTrigger asChild>
+        <Button variant="ghost" size="icon" className="md:hidden">
+          <Menu className="h-6 w-6" />
+          <span className="sr-only">Toggle menu</span>
+        </Button>
+      </SheetTrigger>
+      <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+        <nav className="flex flex-col gap-4 mt-8">
+          <Link href="/" onClick={() => setOpen(false)} className="text-lg font-medium py-2 hover:text-sky-600">
+            Home
+          </Link>
+          <Link href="/about-us" onClick={() => setOpen(false)} className="text-lg font-medium py-2 hover:text-sky-600">
+            About Us
+          </Link>
+          <Link href="/programs" onClick={() => setOpen(false)} className="text-lg font-medium py-2 hover:text-sky-600">
+            Programs
+          </Link>
+          <a
+            href="https://square.link/u/OQowKsqR"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+            className="text-lg font-medium py-2 hover:text-sky-600"
+          >
+            Donate
+          </a>
+          <Link href="/contact" onClick={() => setOpen(false)} className="text-lg font-medium py-2 hover:text-sky-600">
+            Contact
+          </Link>
+          <div className="mt-4">
+            <Link href="/contact" onClick={() => setOpen(false)}>
+              <Button className="w-full bg-sky-600 hover:bg-sky-700">Get In Touch</Button>
+            </Link>
           </div>
-          <nav className="flex flex-col items-center gap-6 p-4">
-            <Link href="/" className="text-xl font-medium hover:text-sky-600" onClick={toggleMenu}>
-              HOME
-            </Link>
-            <Link href="/about-us" className="text-xl font-medium hover:text-sky-600" onClick={toggleMenu}>
-              ABOUT US
-            </Link>
-            <Link href="/programs" className="text-xl font-medium hover:text-sky-600" onClick={toggleMenu}>
-              PROGRAMS
-            </Link>
-            <Link href="/donate" className="text-xl font-medium hover:text-sky-600" onClick={toggleMenu}>
-              DONATE
-            </Link>
-            <Link href="/contact" className="text-xl font-medium hover:text-sky-600" onClick={toggleMenu}>
-              CONTACT
-            </Link>
-            <Link href="/contact">
-              <Button className="mt-4 bg-sky-600 hover:bg-sky-700">Get In Touch</Button>
-            </Link>
-          </nav>
-        </div>
-      )}
-    </div>
+        </nav>
+      </SheetContent>
+    </Sheet>
   )
 }

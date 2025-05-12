@@ -23,9 +23,14 @@ export default function Navbar() {
           <Link href="/programs" className="text-sm font-medium hover:underline">
             PROGRAMS
           </Link>
-          <Link href="/donate" className="text-sm font-medium hover:underline">
+          <a
+            href="https://square.link/u/OQowKsqR"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-medium hover:underline"
+          >
             DONATE
-          </Link>
+          </a>
           <Link href="/contact" className="text-sm font-medium hover:underline">
             CONTACT
           </Link>

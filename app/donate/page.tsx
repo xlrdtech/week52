@@ -1,7 +1,6 @@
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Heart, DollarSign, Users, Gift, Calendar, Home } from "lucide-react"
+import { Heart, DollarSign, Users, Calendar, Home } from "lucide-react"
 import Image from "next/image"
 import HeroBackground from "@/components/hero-background"
 
@@ -100,26 +99,45 @@ export default function Donate() {
                   Make an immediate impact with a one-time contribution of any amount.
                 </p>
                 <div className="grid grid-cols-3 gap-3 mb-6">
-                  <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50">
-                    $25
-                  </Button>
-                  <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50">
-                    $50
-                  </Button>
-                  <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50">
-                    $100
-                  </Button>
-                  <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50">
-                    $250
-                  </Button>
-                  <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50">
-                    $500
-                  </Button>
-                  <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50">
-                    Other
-                  </Button>
+                  <a href="https://square.link/u/OQowKsqR" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50 w-full">
+                      $25
+                    </Button>
+                  </a>
+                  <a href="https://square.link/u/OQowKsqR" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50 w-full">
+                      $50
+                    </Button>
+                  </a>
+                  <a href="https://square.link/u/OQowKsqR" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50 w-full">
+                      $100
+                    </Button>
+                  </a>
+                  <a href="https://square.link/u/OQowKsqR" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50 w-full">
+                      $250
+                    </Button>
+                  </a>
+                  <a href="https://square.link/u/OQowKsqR" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50 w-full">
+                      $500
+                    </Button>
+                  </a>
+                  <a href="https://square.link/u/OQowKsqR" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50 w-full">
+                      Other
+                    </Button>
+                  </a>
                 </div>
-                <Button className="w-full bg-sky-600 hover:bg-sky-700">Donate Now</Button>
+                <a
+                  href="https://square.link/u/OQowKsqR"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full block"
+                >
+                  <Button className="w-full bg-sky-600 hover:bg-sky-700">Donate Now</Button>
+                </a>
               </CardContent>
             </Card>
 
@@ -135,26 +153,45 @@ export default function Donate() {
                   Become a sustaining supporter with a recurring monthly donation.
                 </p>
                 <div className="grid grid-cols-3 gap-3 mb-6">
-                  <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50">
-                    $10/mo
-                  </Button>
-                  <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50">
-                    $25/mo
-                  </Button>
-                  <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50">
-                    $50/mo
-                  </Button>
-                  <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50">
-                    $100/mo
-                  </Button>
-                  <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50">
-                    $200/mo
-                  </Button>
-                  <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50">
-                    Other
-                  </Button>
+                  <a href="https://square.link/u/OQowKsqR" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50 w-full">
+                      $10/mo
+                    </Button>
+                  </a>
+                  <a href="https://square.link/u/OQowKsqR" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50 w-full">
+                      $25/mo
+                    </Button>
+                  </a>
+                  <a href="https://square.link/u/OQowKsqR" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50 w-full">
+                      $50/mo
+                    </Button>
+                  </a>
+                  <a href="https://square.link/u/OQowKsqR" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50 w-full">
+                      $100/mo
+                    </Button>
+                  </a>
+                  <a href="https://square.link/u/OQowKsqR" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50 w-full">
+                      $200/mo
+                    </Button>
+                  </a>
+                  <a href="https://square.link/u/OQowKsqR" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50 w-full">
+                      Other
+                    </Button>
+                  </a>
                 </div>
-                <Button className="w-full bg-sky-600 hover:bg-sky-700">Become a Monthly Donor</Button>
+                <a
+                  href="https://square.link/u/OQowKsqR"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full block"
+                >
+                  <Button className="w-full bg-sky-600 hover:bg-sky-700">Become a Monthly Donor</Button>
+                </a>
               </CardContent>
             </Card>
           </div>
@@ -162,51 +199,28 @@ export default function Donate() {
           <div className="max-w-3xl mx-auto">
             <Card className="bg-white border-none shadow-md">
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold mb-4">Other Ways to Support</h3>
-                <div className="space-y-6">
-                  <div className="flex items-start">
-                    <div className="mr-4 mt-1">
-                      <Gift className="h-6 w-6 text-sky-600" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-lg">Corporate Partnerships</h4>
-                      <p className="text-gray-600 mb-2">
-                        Partner with us to provide job training, apprenticeships, and employment opportunities.
-                      </p>
-                      <Link href="/contact" className="text-sky-600 hover:underline">
-                        Contact us to discuss partnership opportunities
-                      </Link>
+                <div className="flex flex-col md:flex-row items-center gap-8">
+                  <div className="md:w-1/3">
+                    <div className="bg-white p-4 rounded-lg shadow-sm">
+                      <Image
+                        src="/donate-qr.png"
+                        alt="Donation QR Code"
+                        width={250}
+                        height={250}
+                        className="w-full h-auto"
+                      />
                     </div>
                   </div>
-
-                  <div className="flex items-start">
-                    <div className="mr-4 mt-1">
-                      <Users className="h-6 w-6 text-sky-600" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-lg">Volunteer</h4>
-                      <p className="text-gray-600 mb-2">
-                        Contribute your time and skills to support our mission and programs.
-                      </p>
-                      <Link href="/contact" className="text-sky-600 hover:underline">
-                        Learn about volunteer opportunities
-                      </Link>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
-                    <div className="mr-4 mt-1">
-                      <DollarSign className="h-6 w-6 text-sky-600" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-lg">Planned Giving</h4>
-                      <p className="text-gray-600 mb-2">
-                        Include 52 Weeks Development in your estate planning to create a lasting legacy.
-                      </p>
-                      <Link href="/contact" className="text-sky-600 hover:underline">
-                        Contact us about planned giving options
-                      </Link>
-                    </div>
+                  <div className="md:w-2/3">
+                    <h3 className="text-xl font-bold mb-4">Scan to Donate</h3>
+                    <p className="text-gray-600 mb-4">
+                      Use your phone's camera to scan this QR code and make a donation quickly and securely through
+                      Square.
+                    </p>
+                    <p className="text-gray-600">
+                      Your contribution will directly support our programs and help us continue providing second chances
+                      to those who need them most.
+                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -265,9 +279,11 @@ export default function Donate() {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Your support helps us provide the tools, training, and support needed for successful reintegration.
           </p>
-          <Button size="lg" className="bg-white text-sky-600 hover:bg-gray-100">
-            Donate Now
-          </Button>
+          <a href="https://square.link/u/OQowKsqR" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="bg-white text-sky-600 hover:bg-gray-100">
+              Donate Now
+            </Button>
+          </a>
         </div>
       </section>
     </div>

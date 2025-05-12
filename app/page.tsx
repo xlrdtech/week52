@@ -348,11 +348,11 @@ export default function Home() {
 
           <ScrollReveal>
             <div className="mt-8 text-center">
-              <Link href="/donate">
+              <a href="https://square.link/u/OQowKsqR" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="border-sky-600 text-sky-600 hover:bg-sky-50 min-w-[200px]">
                   Support Our Mission
                 </Button>
-              </Link>
+              </a>
             </div>
           </ScrollReveal>
         </div>
@@ -371,11 +371,7 @@ export default function Home() {
                 </p>
                 <div className="bg-slate-800 text-white p-6 rounded-lg">
                   <h3 className="text-xl font-bold mb-4">Our Office</h3>
-                  <p className="mb-4">
-                    Southeast Florida
-                    <br />
-                    (Treasure Coast – Dade County)
-                  </p>
+                  <p className="mb-4">Southeast Florida (Dade County)</p>
                   <div className="space-y-3">
                     <div className="flex items-center">
                       <Mail className="h-5 w-5 mr-3 text-sky-400" />
