@@ -1,16 +1,18 @@
 import type React from "react"
+import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
-import { ThemeProvider } from "@/components/theme-provider"
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
 
 const inter = Inter({ subsets: ["latin"] })
 
-export const metadata = {
-  title: "52 Weeks Development",
-  description: "Redeveloping individuals and communities through second chance opportunities.",
-    generator: 'v0.dev'
+export const metadata: Metadata = {
+  title: "52 Weeks Development - Second Chance Opportunities",
+  description:
+    "Redeveloping individuals and communities through second chance opportunities. Providing housing, job training, and support for justice-involved individuals.",
+  generator: "v0.app",
 }
 
 export default function RootLayout({
@@ -20,17 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="shortcut icon" href="/favicon.ico" />
-      </head>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light">
-          <div className="flex min-h-screen flex-col">
-            <Navbar />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
-        </ThemeProvider>
+      <body className={`${inter.className} font-sans antialiased`}>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+        <Analytics />
       </body>
     </html>
   )

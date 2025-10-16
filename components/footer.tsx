@@ -1,96 +1,84 @@
 import Link from "next/link"
-import { Twitter, Instagram, Mail, MapPin, Phone } from "lucide-react"
+import Image from "next/image"
 
-export default function Footer() {
+export function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-10 md:py-12">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-          <div>
-            <h3 className="text-lg font-bold mb-4 text-center md:text-left">Quick Links</h3>
-            <div className="flex flex-wrap justify-center md:justify-start gap-4">
-              <Link href="/" className="text-gray-300 hover:text-white">
-                Home
-              </Link>
-              <Link href="/about-us" className="text-gray-300 hover:text-white">
-                About Us
-              </Link>
-              <Link href="/programs" className="text-gray-300 hover:text-white">
-                Programs
-              </Link>
-              <Link href="/donate" className="text-gray-300 hover:text-white">
-                Donate
-              </Link>
-              <Link href="/contact" className="text-gray-300 hover:text-white">
-                Contact
-              </Link>
+    <footer className="bg-slate-900 text-white">
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        <div className="grid md:grid-cols-4 gap-8">
+          {/* Logo and Description */}
+          <div className="md:col-span-2">
+            <div className="flex items-center gap-3 mb-4">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_1390.JPG-r9oNMP7wdPFYTmV0JqgGWfVmP5FESW.jpeg"
+                alt="52 Weeks Development"
+                width={50}
+                height={50}
+                className="rounded"
+              />
+              <span className="font-bold text-lg">52 Weeks Development</span>
             </div>
+            <p className="text-slate-300 mb-4">
+              Redeveloping individuals and communities through second chance opportunities.
+            </p>
+            <p className="text-sm text-slate-400">
+              © {new Date().getFullYear()} 52 Weeks Development. All rights reserved.
+            </p>
           </div>
+
+          {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-center md:text-left">Our Programs</h3>
+            <h3 className="font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li className="text-center md:text-left">
-                <Link href="/programs#housing" className="text-gray-300 hover:text-white">
-                  Temporary Supportive Housing
+              <li>
+                <Link href="/" className="text-slate-300 hover:text-cyan-400 transition-colors">
+                  Home
                 </Link>
               </li>
-              <li className="text-center md:text-left">
-                <Link href="/programs#workforce" className="text-gray-300 hover:text-white">
-                  Workforce Development & Job Training
+              <li>
+                <Link href="/about-us" className="text-slate-300 hover:text-cyan-400 transition-colors">
+                  About Us
                 </Link>
               </li>
-              <li className="text-center md:text-left">
-                <Link href="/programs#mental-health" className="text-gray-300 hover:text-white">
-                  Mental Health & Trauma Counseling
+              <li>
+                <Link href="/programs" className="text-slate-300 hover:text-cyan-400 transition-colors">
+                  Programs
                 </Link>
               </li>
-              <li className="text-center md:text-left">
-                <Link href="/programs#education" className="text-gray-300 hover:text-white">
-                  Educational Advancement
+              <li>
+                <Link href="/contact" className="text-slate-300 hover:text-cyan-400 transition-colors">
+                  Contact
                 </Link>
               </li>
             </ul>
           </div>
+
+          {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-center md:text-left">Contact Us</h3>
-            <ul className="space-y-2">
-              <li className="flex items-start justify-center md:justify-start">
-                <MapPin className="h-5 w-5 mr-2 mt-0.5 text-sky-400" />
-                <div className="text-gray-300">Southeast Florida (Dade County)</div>
-              </li>
-              <li className="flex items-center justify-center md:justify-start">
-                <Mail className="h-5 w-5 mr-2 text-sky-400" />
-                <a href="mailto:Waine@52weeksdev.org" className="text-gray-300 hover:text-white">
-                  Waine@52weeksdev.org
+            <h3 className="font-bold mb-4">Contact</h3>
+            <ul className="space-y-2 text-slate-300">
+              <li>Southeast Florida</li>
+              <li>
+                <a href="mailto:waine@52weeks.dev" className="hover:text-cyan-400 transition-colors">
+                  waine@52weeks.dev
                 </a>
               </li>
-              <li className="flex items-center justify-center md:justify-start">
-                <Phone className="h-5 w-5 mr-2 text-sky-400" />
-                <a href="tel:+19546965494" className="text-gray-300 hover:text-white">
+              <li>
+                <a href="tel:9546965494" className="hover:text-cyan-400 transition-colors">
                   (954) 696-5494
                 </a>
               </li>
+              <li className="pt-4">
+                <Link
+                  href="https://square.link/u/OQowKsqR"
+                  target="_blank"
+                  className="inline-block bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded transition-colors"
+                >
+                  Donate Now
+                </Link>
+              </li>
             </ul>
           </div>
-          <div>
-            <h3 className="text-lg font-bold mb-4 text-center md:text-left">52 Weeks Development</h3>
-            <p className="text-gray-300 mb-4 text-center md:text-left">
-              Redeveloping individuals and communities through second chance opportunities.
-            </p>
-            <div className="flex space-x-4 justify-center md:justify-start">
-              <Link href="https://twitter.com/52weeksdev" className="text-gray-300 hover:text-white">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter (X)</span>
-              </Link>
-              <Link href="https://www.instagram.com/52weeksdev" className="text-gray-300 hover:text-white">
-                <Instagram className="h-5 w-5" />
-                <span className="sr-only">Instagram</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="border-t border-gray-800 mt-8 pt-6 text-center text-gray-400">
-          <p>© 2025 All rights reserved.</p>
         </div>
       </div>
     </footer>
