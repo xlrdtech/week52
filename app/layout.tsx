@@ -9,10 +9,57 @@ import { Footer } from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "52 Weeks Development - Second Chance Opportunities",
+  title: {
+    default: "52 Weeks Development - Second Chance Opportunities",
+    template: "%s | 52 Weeks Development",
+  },
   description:
     "Redeveloping individuals and communities through second chance opportunities. Providing housing, job training, and support for justice-involved individuals.",
   generator: "v0.app",
+  // Canonical base URL for metadata and generated links
+  metadataBase: new URL("https://www.52weeks.dev"),
+  applicationName: "52 Weeks Development",
+  authors: [{ name: "52 Weeks Development" }],
+  icons: {
+    icon: [
+      { url: "/placeholder-logo.png" },
+      { url: "/placeholder-logo.svg", type: "image/svg+xml" },
+    ],
+    shortcut: [{ url: "/placeholder-logo.png" }],
+    apple: [{ url: "/placeholder-logo.png" }],
+  },
+  openGraph: {
+    type: "website",
+    url: "https://www.52weeks.dev",
+    title: "52 Weeks Development - Second Chance Opportunities",
+    description:
+      "Redeveloping individuals and communities through second chance opportunities. Providing housing, job training, and support for justice-involved individuals.",
+    siteName: "52 Weeks Development",
+    images: [
+      {
+        url: "/placeholder.jpg",
+        width: 1200,
+        height: 630,
+        alt: "52 Weeks Development",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "52 Weeks Development - Second Chance Opportunities",
+    description:
+      "Redeveloping individuals and communities through second chance opportunities. Providing housing, job training, and support for justice-involved individuals.",
+    images: ["/placeholder.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  themeColor: "#ffffff",
 }
 
 export default function RootLayout({
@@ -22,7 +69,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} font-sans antialiased`}>
+      {/* Center text on all screen sizes */}
+      <body className={`${inter.className} font-sans antialiased text-center`}>
+        {/* Domain notice banner is already handled in the client-side Header component */}
         <Header />
         <main>{children}</main>
         <Footer />

@@ -1,13 +1,14 @@
 import Link from "next/link"
 import Image from "next/image"
+import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import { Users, Heart, Lightbulb, Building2 } from "lucide-react"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen home-page text-center">
       {/* Hero Section */}
-      <section className="relative h-[600px] flex items-center justify-center text-white">
+      <section className="relative min-h-[600px] py-12 flex items-center justify-center text-white">
         <div className="absolute inset-0 bg-slate-900/80 z-10" />
         <Image
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_1391.JPG-Afkt1HNUb0Ldf2QdjE16rHZIuxXb4O.jpeg"
@@ -24,7 +25,7 @@ export default function HomePage() {
             At 52 Weeks Development, we are dedicated to redeveloping individuals and communities through second chance
             opportunities, offering a holistic support system tailored for justice-involved individuals.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button asChild size="lg" className="bg-cyan-600 hover:bg-cyan-700 text-white">
               <Link href="/programs">Explore Our Programs</Link>
             </Button>
@@ -104,16 +105,16 @@ export default function HomePage() {
                 Safe, stable housing for program participants, providing a structured environment that supports personal
                 growth and accountability.
               </p>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-start gap-2">
+              <ul className="space-y-3 mb-6 text-center">
+                <li className="flex items-center justify-center gap-2">
                   <span className="text-cyan-400 mt-1">✓</span>
                   <span>Structured living environment</span>
                 </li>
-                <li className="flex items-start gap-2">
+                <li className="flex items-center justify-center gap-2">
                   <span className="text-cyan-400 mt-1">✓</span>
                   <span>Supportive community</span>
                 </li>
-                <li className="flex items-start gap-2">
+                <li className="flex items-center justify-center gap-2">
                   <span className="text-cyan-400 mt-1">✓</span>
                   <span>Reduced risk of recidivism</span>
                 </li>
@@ -128,16 +129,16 @@ export default function HomePage() {
                 Hands-on, industry-specific job training and skill-building programs designed to prepare participants
                 for high-demand careers.
               </p>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-start gap-2">
+              <ul className="space-y-3 mb-6 text-center">
+                <li className="flex items-center justify-center gap-2">
                   <span className="text-white mt-1">✓</span>
                   <span>Industry-recognized certifications</span>
                 </li>
-                <li className="flex items-start gap-2">
+                <li className="flex items-center justify-center gap-2">
                   <span className="text-white mt-1">✓</span>
                   <span>Apprenticeship opportunities</span>
                 </li>
-                <li className="flex items-start gap-2">
+                <li className="flex items-center justify-center gap-2">
                   <span className="text-white mt-1">✓</span>
                   <span>Career placement assistance</span>
                 </li>
@@ -195,4 +196,34 @@ export default function HomePage() {
       </section>
     </div>
   )
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Home",
+    description:
+      "52 Weeks Development redevelops individuals and communities through second chance opportunities.",
+    alternates: { canonical: "/" },
+    openGraph: {
+      title: "Home",
+      url: "https://www.52weeks.dev/",
+      description:
+        "52 Weeks Development redevelops individuals and communities through second chance opportunities.",
+      images: [
+        {
+          url: "/placeholder.jpg",
+          width: 1200,
+          height: 630,
+          alt: "52 Weeks Development",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Home",
+      description:
+        "52 Weeks Development redevelops individuals and communities through second chance opportunities.",
+      images: ["/placeholder.jpg"],
+    },
+  }
 }

@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Home, Briefcase, Heart, GraduationCap } from "lucide-react"
+import type { Metadata } from "next"
 
 export default function ProgramsPage() {
   return (
@@ -39,7 +40,7 @@ export default function ProgramsPage() {
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-cyan-100 flex items-center justify-center">
                 <Home className="w-8 h-8 text-cyan-600" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Temporary Supportive Housing</h3>
+              <h3 className="text-xl font-bold mb-3">Temporary Supportive Housing — COMING SOON</h3>
               <p className="text-muted-foreground">
                 Safe, stable housing providing a structured environment for growth.
               </p>
@@ -74,7 +75,7 @@ export default function ProgramsPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6">Temporary Supportive Housing</h2>
+              <h2 className="text-4xl font-bold mb-6">Temporary Supportive Housing — COMING SOON</h2>
               <p className="text-lg mb-6">
                 Our temporary supportive housing provides a safe, structured environment that fosters personal growth
                 and accountability while reducing the risk of recidivism.
@@ -306,3 +307,5 @@ export default function ProgramsPage() {
     </div>
   )
 }
+
+// Metadata moved to app/programs/layout.tsx

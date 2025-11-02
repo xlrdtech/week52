@@ -7,8 +7,8 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo and Description */}
-          <div className="md:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
+          <div className="md:col-span-2 text-center">
+            <div className="flex items-center gap-3 mb-4 justify-center">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_1390.JPG-r9oNMP7wdPFYTmV0JqgGWfVmP5FESW.jpeg"
                 alt="52 Weeks Development"
@@ -27,7 +27,7 @@ export function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="text-center">
             <h3 className="font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
@@ -54,13 +54,18 @@ export function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="text-center">
             <h3 className="font-bold mb-4">Contact</h3>
             <ul className="space-y-2 text-slate-300">
-              <li>Southeast Florida</li>
+              <li>Broward and Dade Counties</li>
               <li>
                 <a href="mailto:waine@52weeks.dev" className="hover:text-cyan-400 transition-colors">
                   waine@52weeks.dev
+                </a>
+              </li>
+              <li>
+                <a href="https://www.52weeks.dev" target="_blank" className="hover:text-cyan-400 transition-colors">
+                  www.52weeks.dev
                 </a>
               </li>
               <li>

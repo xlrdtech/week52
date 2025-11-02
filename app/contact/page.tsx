@@ -6,7 +6,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { MapPin, Mail, Phone, Clock } from "lucide-react"
+import { MapPin, Mail, Phone, Clock, Globe } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export default function ContactPage() {
@@ -60,9 +60,8 @@ export default function ContactPage() {
                     <MapPin className="w-6 h-6 text-cyan-600" />
                   </div>
                   <div>
-                    <h3 className="font-bold mb-1">Our Location</h3>
-                    <p className="text-muted-foreground">Southeast Florida</p>
-                    <p className="text-muted-foreground">(Treasure Coast – Dade County)</p>
+                    <h3 className="font-bold mb-1">Our Service Area</h3>
+                    <p className="text-muted-foreground">Broward and Dade Counties</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -74,6 +73,25 @@ export default function ContactPage() {
                     <a href="mailto:waine@52weeks.dev" className="text-cyan-600 hover:underline">
                       waine@52weeks.dev
                     </a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-cyan-100 flex items-center justify-center flex-shrink-0">
+                    <Globe className="w-6 h-6 text-cyan-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold mb-1">Website</h3>
+                    <a
+                      href="https://www.52weeks.dev"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-cyan-600 hover:underline"
+                    >
+                      www.52weeks.dev
+                    </a>
+                    <p className="text-xs text-muted-foreground mt-1">
+                      Note: If you still see 52weeks-dev.org, it will redirect to our new site soon.
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">

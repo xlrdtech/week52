@@ -1,8 +1,23 @@
 {
   "version": 2,
-  "buildCommand": "pnpm build",
-  "installCommand": "pnpm install",
-  "env": {
-    "NODE_ENV": "production"
-  }
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "52weeks-dev.org" }],
+      "destination": "https://www.52weeks.dev/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.52weeks-dev.org" }],
+      "destination": "https://www.52weeks.dev/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "52weeks.dev" }],
+      "destination": "https://www.52weeks.dev/$1",
+      "permanent": true
+    }
+  ]
 }

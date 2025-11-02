@@ -122,3 +122,39 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Center all text on mobile viewports */
+@media (max-width: 640px) {
+  body {
+    text-align: center;
+  }
+  /* Force alignment utilities to center on mobile */
+  .text-left,
+  .text-right,
+  .text-justify {
+    text-align: center !important;
+  }
+}
+
+/* Homepage: center-align all textual content for consistent presentation */
+.home-page,
+.home-page h1,
+.home-page h2,
+.home-page h3,
+.home-page h4,
+.home-page h5,
+.home-page h6,
+.home-page p,
+.home-page ul,
+.home-page ol,
+.home-page li,
+.home-page small,
+.home-page label,
+.home-page figcaption {
+  text-align: center;
+}
+
+/* Center flex list items (used in program bullets) */
+.home-page li {
+  justify-content: center;
+}

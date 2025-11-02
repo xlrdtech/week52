@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Target, Lightbulb } from "lucide-react"
+import type { Metadata } from "next"
 
 export default function AboutPage() {
   return (
@@ -193,8 +194,8 @@ export default function AboutPage() {
                 <li className="flex items-start gap-2">
                   <span className="text-cyan-600 mt-1">✓</span>
                   <span className="text-muted-foreground">
-                    Geographic Focus: Initially focused on individuals within Southeast Florida, with plans for national
-                    expansion.
+                    Geographic Focus: Initially focused on individuals within Broward and Dade Counties, with plans for
+                    national expansion.
                   </span>
                 </li>
               </ul>
@@ -233,3 +234,5 @@ export default function AboutPage() {
     </div>
   )
 }
+
+// Metadata moved to app/about-us/layout.tsx
