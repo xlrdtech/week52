@@ -26,25 +26,25 @@ export function Footer() {
           {/* Quick Links */}
           <div>
             <p className="text-slate-300">
-              <Link href="/" className="hover:text-cyan-400 transition-colors">Home</Link> | 
-              <Link href="/about-us" className="hover:text-cyan-400 transition-colors ml-2">About Us</Link> | 
-              <Link href="/programs" className="hover:text-cyan-400 transition-colors ml-2">Programs</Link> | 
-              <Link href="/contact" className="hover:text-cyan-400 transition-colors ml-2">Contact</Link>
+              <Link href="/" className="hover:text-cyan-400 transition-colors">Home</Link>
+              <Link href="/about-us" className="hover:text-cyan-400 transition-colors ml-4">About Us</Link>
+              <Link href="/programs" className="hover:text-cyan-400 transition-colors ml-4">Programs</Link>
+              <Link href="/contact" className="hover:text-cyan-400 transition-colors ml-4">Contact</Link>
             </p>
           </div>
 
           {/* Contact Info */}
           <div>
             <p className="text-slate-300 mb-4">
-              Serving Broward and Dade Counties | 
-              <a href="mailto:waine@52weeks.dev" className="hover:text-cyan-400 transition-colors ml-2">waine@52weeks.dev</a> | 
-              <a href="https://www.52weeks.dev" target="_blank" className="hover:text-cyan-400 transition-colors ml-2">www.52weeks.dev</a> | 
-              <a href="tel:9546965494" className="hover:text-cyan-400 transition-colors ml-2">(954) 696-5494</a>
+              Serving Broward and Dade Counties
+              <a href="mailto:waine@52weeks.dev" className="hover:text-cyan-400 transition-colors ml-4">waine@52weeks.dev</a>
+              <a href="https://www.52weeks.dev" target="_blank" className="hover:text-cyan-400 transition-colors ml-4">www.52weeks.dev</a>
+              <a href="tel:9546965494" className="hover:text-cyan-400 transition-colors ml-4">(954) 696-5494</a>
             </p>
             <p className="text-slate-300 mb-6">
-              Follow us: 
-              <a href="https://instagram.com/52weeksdev" target="_blank" className="hover:text-cyan-400 transition-colors ml-2">Instagram @52weeksdev</a> | 
-              <a href="https://x.com/52weeksdev" target="_blank" className="hover:text-cyan-400 transition-colors ml-2">X @52weeksdev</a>
+              Follow us
+              <a href="https://instagram.com/52weeksdev" target="_blank" className="hover:text-cyan-400 transition-colors ml-4">Instagram @52weeksdev</a>
+              <a href="https://x.com/52weeksdev" target="_blank" className="hover:text-cyan-400 transition-colors ml-4">X @52weeksdev</a>
             </p>
             <Link
               href="https://square.link/u/OQowKsqR"
