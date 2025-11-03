@@ -80,33 +80,41 @@ export default function ProgramsPage() {
                 Our temporary supportive housing provides a safe, structured environment that fosters personal growth
                 and accountability while reducing the risk of recidivism.
               </p>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-600 mt-1 text-xl">✓</span>
-                  <div>
-                    <strong>Safe, Stable Environment:</strong> Secure housing that removes individuals from environments
-                    associated with past behaviors.
+              <ul className="space-y-6 mb-8">
+                <li className="text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <span className="text-cyan-600 text-xl">✓</span>
+                    <strong>Safe, Stable Environment:</strong>
+                  </div>
+                  <div className="text-muted-foreground">
+                    Secure housing that removes individuals from environments associated with past behaviors.
                   </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-600 mt-1 text-xl">✓</span>
-                  <div>
-                    <strong>Structured Living:</strong> Clear expectations, routines, and accountability measures that
-                    promote responsibility and self-discipline.
+                <li className="text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <span className="text-cyan-600 text-xl">✓</span>
+                    <strong>Structured Living:</strong>
+                  </div>
+                  <div className="text-muted-foreground">
+                    Clear expectations, routines, and accountability measures that promote responsibility and self-discipline.
                   </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-600 mt-1 text-xl">✓</span>
-                  <div>
-                    <strong>Supportive Community:</strong> Peer support and mentorship from staff and fellow
-                    participants who understand the reentry journey.
+                <li className="text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <span className="text-cyan-600 text-xl">✓</span>
+                    <strong>Supportive Community:</strong>
+                  </div>
+                  <div className="text-muted-foreground">
+                    Peer support and mentorship from staff and fellow participants who understand the reentry journey.
                   </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-600 mt-1 text-xl">✓</span>
-                  <div>
-                    <strong>Integrated Services:</strong> Housing that connects directly to our other program
-                    components, creating a seamless support system.
+                <li className="text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <span className="text-cyan-600 text-xl">✓</span>
+                    <strong>Integrated Services:</strong>
+                  </div>
+                  <div className="text-muted-foreground">
+                    Housing that connects directly to our other program components, creating a seamless support system.
                   </div>
                 </li>
               </ul>
@@ -146,40 +154,50 @@ export default function ProgramsPage() {
                 Equip yourself with essential skills for high-demand careers through hands-on training and
                 apprenticeships with local businesses for real-world experience.
               </p>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-600 mt-1 text-xl">✓</span>
-                  <div>
-                    <strong>Industry-Specific Training:</strong> Focused skill development in high-growth sectors like
-                    construction, healthcare, technology, and hospitality.
+              <ul className="space-y-6 mb-8">
+                <li className="text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <span className="text-cyan-600 text-xl">✓</span>
+                    <strong>Industry-Specific Training:</strong>
+                  </div>
+                  <div className="text-muted-foreground">
+                    Focused skill development in high-growth sectors like construction, healthcare, technology, and hospitality.
                   </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-600 mt-1 text-xl">✓</span>
-                  <div>
-                    <strong>NCCER Core Training:</strong> Nationally recognized construction education that includes
-                    safety, construction basics, and essential workplace skills.
+                <li className="text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <span className="text-cyan-600 text-xl">✓</span>
+                    <strong>NCCER Core Training:</strong>
+                  </div>
+                  <div className="text-muted-foreground">
+                    Nationally recognized construction education that includes safety, construction basics, and essential workplace skills.
                   </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-600 mt-1 text-xl">✓</span>
-                  <div>
-                    <strong>Trade Pathways:</strong> Specialized training in masonry, plumbing, carpentry, and other
-                    in-demand trades.
+                <li className="text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <span className="text-cyan-600 text-xl">✓</span>
+                    <strong>Trade Pathways:</strong>
+                  </div>
+                  <div className="text-muted-foreground">
+                    Specialized training in masonry, plumbing, carpentry, and other in-demand trades.
                   </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-600 mt-1 text-xl">✓</span>
-                  <div>
-                    <strong>Apprenticeship Opportunities:</strong> Partnerships with local businesses to provide paid
-                    work experience and employment pipelines.
+                <li className="text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <span className="text-cyan-600 text-xl">✓</span>
+                    <strong>Apprenticeship Opportunities:</strong>
+                  </div>
+                  <div className="text-muted-foreground">
+                    Partnerships with local businesses to provide paid work experience and employment pipelines.
                   </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-600 mt-1 text-xl">✓</span>
-                  <div>
-                    <strong>Job Placement Assistance:</strong> Resume building, interview preparation, and direct
-                    connections to employers.
+                <li className="text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <span className="text-cyan-600 text-xl">✓</span>
+                    <strong>Job Placement Assistance:</strong>
+                  </div>
+                  <div className="text-muted-foreground">
+                    Resume building, interview preparation, and direct connections to employers.
                   </div>
                 </li>
               </ul>
@@ -198,31 +216,41 @@ export default function ProgramsPage() {
                 Comprehensive trauma-informed counseling and wellness services to support emotional wellbeing and
                 personal growth.
               </p>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-600 mt-1 text-xl">✓</span>
-                  <div>
-                    <strong>Individual Counseling:</strong> One-on-one sessions with licensed therapists specializing in
-                    trauma and reentry challenges.
+              <ul className="space-y-6 mb-8">
+                <li className="text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <span className="text-cyan-600 text-xl">✓</span>
+                    <strong>Individual Counseling:</strong>
+                  </div>
+                  <div className="text-muted-foreground">
+                    One-on-one sessions with licensed therapists specializing in trauma and reentry challenges.
                   </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-600 mt-1 text-xl">✓</span>
-                  <div>
-                    <strong>Group Therapy:</strong> Peer support groups that foster connection and shared healing.
+                <li className="text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <span className="text-cyan-600 text-xl">✓</span>
+                    <strong>Group Therapy:</strong>
+                  </div>
+                  <div className="text-muted-foreground">
+                    Peer support groups that foster connection and shared healing.
                   </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-600 mt-1 text-xl">✓</span>
-                  <div>
-                    <strong>Trauma-Informed Care:</strong> Services designed to address the impact of past trauma on
-                    current behavior and wellbeing.
+                <li className="text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <span className="text-cyan-600 text-xl">✓</span>
+                    <strong>Trauma-Informed Care:</strong>
+                  </div>
+                  <div className="text-muted-foreground">
+                    Services designed to address the impact of past trauma on current behavior and wellbeing.
                   </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-600 mt-1 text-xl">✓</span>
-                  <div>
-                    <strong>Wellness Programs:</strong> Mindfulness, stress management, and healthy coping strategies.
+                <li className="text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <span className="text-cyan-600 text-xl">✓</span>
+                    <strong>Wellness Programs:</strong>
+                  </div>
+                  <div className="text-muted-foreground">
+                    Mindfulness, stress management, and healthy coping strategies.
                   </div>
                 </li>
               </ul>
@@ -257,33 +285,41 @@ export default function ProgramsPage() {
                 Build a strong educational foundation through GED preparation and vocational certifications that open
                 doors to career opportunities.
               </p>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-600 mt-1 text-xl">✓</span>
-                  <div>
-                    <strong>GED Preparation:</strong> Comprehensive instruction and support to earn your high school
-                    equivalency diploma.
+              <ul className="space-y-6 mb-8">
+                <li className="text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <span className="text-cyan-600 text-xl">✓</span>
+                    <strong>GED Preparation:</strong>
+                  </div>
+                  <div className="text-muted-foreground">
+                    Comprehensive instruction and support to earn your high school equivalency diploma.
                   </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-600 mt-1 text-xl">✓</span>
-                  <div>
-                    <strong>Vocational Certifications:</strong> Industry-recognized credentials that demonstrate your
-                    skills to employers.
+                <li className="text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <span className="text-cyan-600 text-xl">✓</span>
+                    <strong>Vocational Certifications:</strong>
+                  </div>
+                  <div className="text-muted-foreground">
+                    Industry-recognized credentials that demonstrate your skills to employers.
                   </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-600 mt-1 text-xl">✓</span>
-                  <div>
-                    <strong>Life Skills Training:</strong> Financial literacy, communication, and professional
-                    development.
+                <li className="text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <span className="text-cyan-600 text-xl">✓</span>
+                    <strong>Life Skills Training:</strong>
+                  </div>
+                  <div className="text-muted-foreground">
+                    Financial literacy, communication, and professional development.
                   </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-600 mt-1 text-xl">✓</span>
-                  <div>
-                    <strong>Continuing Education Support:</strong> Guidance and resources for pursuing further education
-                    and training.
+                <li className="text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <span className="text-cyan-600 text-xl">✓</span>
+                    <strong>Continuing Education Support:</strong>
+                  </div>
+                  <div className="text-muted-foreground">
+                    Guidance and resources for pursuing further education and training.
                   </div>
                 </li>
               </ul>
