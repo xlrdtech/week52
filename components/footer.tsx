@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="md:col-span-2 text-center">
-            <div className="flex items-center gap-3 mb-4 justify-center">
+            <div className="flex flex-col items-center gap-3 mb-4">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_1390.JPG-r9oNMP7wdPFYTmV0JqgGWfVmP5FESW.jpeg"
                 alt="52 Weeks Development"
