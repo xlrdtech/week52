@@ -4,11 +4,11 @@ import Image from "next/image"
 export function Footer() {
   return (
     <footer className="bg-slate-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
+      <div className="max-w-4xl mx-auto px-4 py-12">
+        <div className="space-y-8 text-center">
           {/* Logo and Description */}
-          <div className="md:col-span-2 text-center">
-            <div className="flex flex-col items-center gap-3 mb-4">
+          <div>
+            <div className="flex flex-col items-center gap-3 mb-6">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_1390.JPG-r9oNMP7wdPFYTmV0JqgGWfVmP5FESW.jpeg"
                 alt="52 Weeks Development"
@@ -18,75 +18,41 @@ export function Footer() {
               />
               <span className="font-bold text-lg">52 Weeks Development</span>
             </div>
+            <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
+              Redeveloping individuals and communities through second chance opportunities.
+            </p>
           </div>
 
           {/* Quick Links */}
-          <div className="text-center">
-            <h3 className="font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/" className="text-slate-300 hover:text-cyan-400 transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/about-us" className="text-slate-300 hover:text-cyan-400 transition-colors">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/programs" className="text-slate-300 hover:text-cyan-400 transition-colors">
-                  Programs
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-slate-300 hover:text-cyan-400 transition-colors">
-                  Contact
-                </Link>
-              </li>
-            </ul>
+          <div>
+            <p className="text-slate-300">
+              <Link href="/" className="hover:text-cyan-400 transition-colors">Home</Link> | 
+              <Link href="/about-us" className="hover:text-cyan-400 transition-colors ml-2">About Us</Link> | 
+              <Link href="/programs" className="hover:text-cyan-400 transition-colors ml-2">Programs</Link> | 
+              <Link href="/contact" className="hover:text-cyan-400 transition-colors ml-2">Contact</Link>
+            </p>
           </div>
 
           {/* Contact Info */}
-          <div className="text-center">
-            <h3 className="font-bold mb-4">Contact</h3>
-            <ul className="space-y-2 text-slate-300">
-              <li>Broward and Dade Counties</li>
-              <li>
-                <a href="mailto:waine@52weeks.dev" className="hover:text-cyan-400 transition-colors">
-                  waine@52weeks.dev
-                </a>
-              </li>
-              <li>
-                <a href="https://www.52weeks.dev" target="_blank" className="hover:text-cyan-400 transition-colors">
-                  www.52weeks.dev
-                </a>
-              </li>
-              <li>
-                <a href="tel:9546965494" className="hover:text-cyan-400 transition-colors">
-                  (954) 696-5494
-                </a>
-              </li>
-              <li className="pt-4">
-                <a href="https://instagram.com/52weeksdev" target="_blank" className="hover:text-cyan-400 transition-colors">
-                  Instagram: @52weeksdev
-                </a>
-              </li>
-              <li>
-                <a href="https://x.com/52weeksdev" target="_blank" className="hover:text-cyan-400 transition-colors">
-                  X (Twitter): @52weeksdev
-                </a>
-              </li>
-              <li className="pt-4">
-                <Link
-                  href="https://square.link/u/OQowKsqR"
-                  target="_blank"
-                  className="inline-block bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded transition-colors"
-                >
-                  Donate Now
-                </Link>
-              </li>
-            </ul>
+          <div>
+            <p className="text-slate-300 mb-4">
+              Serving Broward and Dade Counties | 
+              <a href="mailto:waine@52weeks.dev" className="hover:text-cyan-400 transition-colors ml-2">waine@52weeks.dev</a> | 
+              <a href="https://www.52weeks.dev" target="_blank" className="hover:text-cyan-400 transition-colors ml-2">www.52weeks.dev</a> | 
+              <a href="tel:9546965494" className="hover:text-cyan-400 transition-colors ml-2">(954) 696-5494</a>
+            </p>
+            <p className="text-slate-300 mb-6">
+              Follow us: 
+              <a href="https://instagram.com/52weeksdev" target="_blank" className="hover:text-cyan-400 transition-colors ml-2">Instagram @52weeksdev</a> | 
+              <a href="https://x.com/52weeksdev" target="_blank" className="hover:text-cyan-400 transition-colors ml-2">X @52weeksdev</a>
+            </p>
+            <Link
+              href="https://square.link/u/OQowKsqR"
+              target="_blank"
+              className="inline-block bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded transition-colors"
+            >
+              Donate Now
+            </Link>
           </div>
         </div>
       </div>
