@@ -38,13 +38,13 @@ export default function AboutPage() {
                 transition from incarceration to hope, stability, and opportunity.
               </p>
               <div className="space-y-6">
-                <div className="flex gap-4">
+                <div className="flex flex-col items-center gap-4">
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 rounded-full bg-cyan-100 flex items-center justify-center">
                       <Target className="w-6 h-6 text-cyan-600" />
                     </div>
                   </div>
-                  <div>
+                  <div className="text-center">
                     <h3 className="text-xl font-bold mb-2">Vision</h3>
                     <p className="text-muted-foreground">
                       By chasing results and not numbers, 52 Weeks Development will become a beacon of hope for second
@@ -52,13 +52,13 @@ export default function AboutPage() {
                     </p>
                   </div>
                 </div>
-                <div className="flex gap-4">
+                <div className="flex flex-col items-center gap-4">
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 rounded-full bg-cyan-100 flex items-center justify-center">
                       <Lightbulb className="w-6 h-6 text-cyan-600" />
                     </div>
                   </div>
-                  <div>
+                  <div className="text-center">
                     <h3 className="text-xl font-bold mb-2">Purpose</h3>
                     <p className="text-muted-foreground">
                       If 52 Weeks Development assists with temporary housing, actual on the job training, apprenticeship
@@ -117,7 +117,7 @@ export default function AboutPage() {
               <p className="text-muted-foreground mb-4">
                 52 Weeks Development's model combines the proven frameworks of YouthBuild, Job Corps, and the Milton
                 Hershey School to create a holistic, wraparound support system specifically tailored for second-chance
-                individuals aged 18-45.
+                individuals aged 18 to 54 years old.
               </p>
               <p className="text-muted-foreground mb-6">
                 By integrating education, workforce development, housing, and therapeutic services under one
@@ -177,7 +177,7 @@ export default function AboutPage() {
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start gap-2">
                   <span className="text-cyan-600 mt-1">✓</span>
-                  <span className="text-muted-foreground">Age: 18-45 years old</span>
+                  <span className="text-muted-foreground">Age: 18 to 54 years old</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-cyan-600 mt-1">✓</span>

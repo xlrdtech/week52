@@ -10,7 +10,7 @@ export function Footer() {
           <div className="md:col-span-2 text-center">
             <div className="flex items-center gap-3 mb-4 justify-center">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_1390.JPG-r9oNMP7wdPFYTmV0JqgGWfVmP5FESW.jpeg"
+                src="/placeholder-logo.png"
                 alt="52 Weeks Development"
                 width={50}
                 height={50}
@@ -18,12 +18,6 @@ export function Footer() {
               />
               <span className="font-bold text-lg">52 Weeks Development</span>
             </div>
-            <p className="text-slate-300 mb-4">
-              Redeveloping individuals and communities through second chance opportunities.
-            </p>
-            <p className="text-sm text-slate-400">
-              © {new Date().getFullYear()} 52 Weeks Development. All rights reserved.
-            </p>
           </div>
 
           {/* Quick Links */}
@@ -74,6 +68,16 @@ export function Footer() {
                 </a>
               </li>
               <li className="pt-4">
+                <a href="https://instagram.com/52weeksdev" target="_blank" className="hover:text-cyan-400 transition-colors">
+                  Instagram: @52weeksdev
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/52weeksdev" target="_blank" className="hover:text-cyan-400 transition-colors">
+                  X (Twitter): @52weeksdev
+                </a>
+              </li>
+              <li className="pt-4">
                 <Link
                   href="https://square.link/u/OQowKsqR"
                   target="_blank"
@@ -85,6 +89,13 @@ export function Footer() {
             </ul>
           </div>
         </div>
+      </div>
+
+      {/* Copyright */}
+      <div className="border-t border-slate-700 mt-12 pt-8 text-center">
+        <p className="text-sm text-slate-400">
+          © {new Date().getFullYear()} 52 Weeks Development. All rights reserved.
+        </p>
       </div>
     </footer>
   )

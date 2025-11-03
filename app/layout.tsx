@@ -37,10 +37,10 @@ export const metadata: Metadata = {
     siteName: "52 Weeks Development",
     images: [
       {
-        url: "/placeholder.jpg",
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_1391.JPG-Afkt1HNUb0Ldf2QdjE16rHZIuxXb4O.jpeg",
         width: 1200,
         height: 630,
-        alt: "52 Weeks Development",
+        alt: "52 Weeks Development Team",
       },
     ],
   },
@@ -49,7 +49,9 @@ export const metadata: Metadata = {
     title: "52 Weeks Development - Second Chance Opportunities",
     description:
       "Redeveloping individuals and communities through second chance opportunities. Providing housing, job training, and support for justice-involved individuals.",
-    images: ["/placeholder.jpg"],
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_1391.JPG-Afkt1HNUb0Ldf2QdjE16rHZIuxXb4O.jpeg",
+    ],
   },
   robots: {
     index: true,

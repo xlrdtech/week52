@@ -48,14 +48,14 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Info */}
-            <div>
+            <div className="text-center">
               <h2 className="text-3xl font-bold mb-8">Get In Touch</h2>
               <p className="text-lg text-muted-foreground mb-8">
                 Have questions about our programs or how you can get involved? We'd love to hear from you. Fill out the
                 form and we'll get back to you as soon as possible.
               </p>
               <div className="space-y-6">
-                <div className="flex items-start gap-4">
+                <div className="flex flex-col items-center gap-4 text-center">
                   <div className="w-12 h-12 rounded-full bg-cyan-100 flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-6 h-6 text-cyan-600" />
                   </div>
@@ -64,7 +64,7 @@ export default function ContactPage() {
                     <p className="text-muted-foreground">Broward and Dade Counties</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
+                <div className="flex flex-col items-center gap-4 text-center">
                   <div className="w-12 h-12 rounded-full bg-cyan-100 flex items-center justify-center flex-shrink-0">
                     <Mail className="w-6 h-6 text-cyan-600" />
                   </div>
@@ -75,7 +75,7 @@ export default function ContactPage() {
                     </a>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
+                <div className="flex flex-col items-center gap-4 text-center">
                   <div className="w-12 h-12 rounded-full bg-cyan-100 flex items-center justify-center flex-shrink-0">
                     <Globe className="w-6 h-6 text-cyan-600" />
                   </div>
@@ -94,7 +94,7 @@ export default function ContactPage() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
+                <div className="flex flex-col items-center gap-4 text-center">
                   <div className="w-12 h-12 rounded-full bg-cyan-100 flex items-center justify-center flex-shrink-0">
                     <Phone className="w-6 h-6 text-cyan-600" />
                   </div>
@@ -105,7 +105,7 @@ export default function ContactPage() {
                     </a>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
+                <div className="flex flex-col items-center gap-4 text-center">
                   <div className="w-12 h-12 rounded-full bg-cyan-100 flex items-center justify-center flex-shrink-0">
                     <Clock className="w-6 h-6 text-cyan-600" />
                   </div>
